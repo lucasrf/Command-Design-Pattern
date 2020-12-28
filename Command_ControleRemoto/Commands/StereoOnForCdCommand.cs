@@ -4,18 +4,19 @@ using System.Text;
 
 namespace Command_ControleRemoto
 {
-    class StereoOff : ICommand
+    class StereoOnForCdCommand : ICommand
     {
         private Stereo _stereo;
 
-        public StereoOff(Stereo stereo)
+        public StereoOnForCdCommand(Stereo stereo)
         {
             this._stereo = stereo;
         }
 
         public void Execute()
         {
-            this._stereo.Off();
+            this._stereo.On();
+            this._stereo.SetCD();
         }
     }
 }

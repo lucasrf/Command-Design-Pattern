@@ -4,16 +4,16 @@ using System.Text;
 
 namespace Command_ControleRemoto
 {
-    class CeilingFanOff : ICommand
+    class CeilingFanHighCommand : ICommand
     {
         private CeilingFan _ceilingFan;
-        public CeilingFanOff(CeilingFan ceilingFan)
+        public CeilingFanHighCommand(CeilingFan ceilingFan)
         {
             _ceilingFan = ceilingFan;
         }
         public void Execute()
         {
-            _ceilingFan.Off();
+            _ceilingFan.HighSpeed();
         }
     }
 }

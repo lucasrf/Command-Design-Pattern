@@ -27,9 +27,9 @@ namespace Command_ControleRemoto
         {
             remoteControl.SetCommand(0, new LightOnCommand(livingRoomLight), new LightOffCommand(livingRoomLight));
             remoteControl.SetCommand(1, new LightOnCommand(kitchenLight), new LightOffCommand(kitchenLight));
-            remoteControl.SetCommand(2, new CeilingFanHigh(livingRoomCeilingFan), new CeilingFanOff(livingRoomCeilingFan));
-            remoteControl.SetCommand(3, new GarageDoorOpen(garageDoor), new GarageDoorClose(garageDoor));
-            remoteControl.SetCommand(4, new StereoOnForCd(stereo), new StereoOff(stereo));
+            remoteControl.SetCommand(2, new CeilingFanHighCommand(livingRoomCeilingFan), new CeilingFanOffCommand(livingRoomCeilingFan));
+            remoteControl.SetCommand(3, new GarageDoorOpenCommand(garageDoor), new GarageDoorCloseCommand(garageDoor));
+            remoteControl.SetCommand(4, new StereoOnForCdCommand(stereo), new StereoOffCommand(stereo));
         }
     }
 }

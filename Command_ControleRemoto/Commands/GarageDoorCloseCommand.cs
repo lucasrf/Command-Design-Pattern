@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Command_ControleRemoto
 {
-    class GarageDoorClose : ICommand
+    class GarageDoorCloseCommand : ICommand
     {
         private Door _garageDoor;
-        public GarageDoorClose(Door garageDoor)
+        public GarageDoorCloseCommand(Door garageDoor)
         {
             _garageDoor = garageDoor;
         }
